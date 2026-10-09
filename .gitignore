@@ -4,3 +4,4 @@
 .config/hypr/noctalia-colors.lua
 .config/hypr/scheme/current.lua
 .config/kitty/themes/noctalia.conf
+.config/hypr/hyprlock.conf
