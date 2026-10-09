@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+
+tmp="$(mktemp --suffix=.png)"
+
+grim -g "$(slurp)" "$tmp" || exit 1
+
+swappy -f "$tmp"
+
+rm -f "$tmp"

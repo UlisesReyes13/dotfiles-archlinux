@@ -1,0 +1,12 @@
+id         = "ulises/dev-launcher"
+name       = "Dev Launcher"
+version    = "1.0.0"
+plugin_api = 24
+author     = "Ulises"
+
+[[launcher_provider]]
+id                       = "dev"
+entry                    = "launcher.luau"
+prefix                   = "dev"
+glyph                    = "terminal-2"
+include_in_global_search = false

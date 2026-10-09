@@ -1,0 +1,3 @@
+[theme.templates.user.hyprlock]
+input_path = "$XDG_CONFIG_HOME/noctalia/templates/hyprlock.conf"
+output_path = "$XDG_CONFIG_HOME/hypr/hyprlock.conf"

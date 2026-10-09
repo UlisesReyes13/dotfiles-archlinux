@@ -1,0 +1,18 @@
+#!/usr/bin/env bash
+
+THEME_DIR="/usr/share/sddm/themes/sddm-astronaut-theme"
+CONF="$1"
+
+if [ -z "$CONF" ]; then
+    echo "Uso: sddm-preview nombre.conf"
+    echo
+    echo "Disponibles:"
+    ls "$THEME_DIR/Themes"
+    exit 1
+fi
+
+sudo sed -i \
+"s|^ConfigFile=.*|ConfigFile=Themes/$CONF|" \
+"$THEME_DIR/metadata.desktop"
+
+sddm-greeter-qt6 --test-mode --theme "$THEME_DIR"
